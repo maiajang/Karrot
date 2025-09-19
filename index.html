@@ -8,8 +8,31 @@
     <link rel="stylesheet" href="css/main.css">
     <script>
         window.onload = () => {
+            
+            const items = document.querySelectorAll(".rank_list a");
+            let current = 0; // 시작 인덱스
+            const size = 4;  // 한 번에 보여줄 개수
 
-        }//script;
+            function showList() {
+                items.forEach((li, i) => {
+                    li.style.display = "none";
+                });
+
+                for (let i = 0; i < size; i++) {
+                    let idx = (current + i) % items.length;
+                    items[idx].style.display = "list-item";
+                }
+
+                current = (current + size) % items.length;
+            }
+
+            // 처음 실행
+            showList();
+
+            // 3초마다 교체
+            setInterval(showList, 3000);
+  
+    }//script;
     </script>
 </head>
 
@@ -193,7 +216,7 @@
                                 <p>모임</p>
                             </div><!-- .dropdown_content end -->
                         </div><!-- .dropdown end -->
-                        <input type="text" value="검색어를 입력해주세요">
+                        <input type="text" placeholder="검색어를 입력해주세요">
                         <a href="#" class="search_btn">
                             <img src="img/arrow_right_white.svg" alt="화살표">
                         </a><!-- .search_btn end -->
@@ -208,10 +231,8 @@
                             </button><!-- .next end -->
                         </div><!-- .rank_btn end -->
                         <div class="rank_list">
-                            <div class="top4_rank">
-
                                 <a href="#" class="rank_text">
-                                    <strong>1.</strong>
+                                   <p class="strong">1.</p>
                                     <p>ps5</p>
                                 </a><!-- .rank_text end -->
                                 <a href="#" class="rank_text">
@@ -226,8 +247,6 @@
                                     <strong>4.</strong>
                                     <p>갤럭시</p>
                                 </a><!-- .rank_text end -->
-                            </div><!-- .top4_rank -->
-                            <div class="temp_hidden">
                                 <a href="#" class="rank_text">
                                     <strong>5.</strong>
                                     <p>폴드7</p>
@@ -252,7 +271,14 @@
                                     <strong>10.</strong>
                                     <p>그랜드세이코</p>
                                 </a><!-- .rank_text end -->
-                            </div><!-- .temp_hidden end -->
+                                <a href="#" class="rank_text">
+                                    <strong></strong>
+                                    <p></p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong></strong>
+                                    <p></p>
+                                </a><!-- .rank_text end -->
                         </div><!-- .rank_list end -->
                     </div><!-- .searchRow-2 end -->
                 </div><!-- .search_section end -->

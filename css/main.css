@@ -206,9 +206,7 @@ strong {
 
 }
 
-.inner .search_section .searchRow-1 .dropdown .search_title p {}
 
-.inner .search_section .searchRow-1 .dropdown .search_title img {}
 
 .inner .search_section .searchRow-1 input {
     font-size: 14px;
@@ -263,23 +261,15 @@ strong {
 
 .inner .search_section .searchRow-2 .rank_btn .next img {}
 
+
 .inner .search_section .searchRow-2 .rank_list {
-    flex: 1;
-
-}
-
-.inner .search_section .searchRow-2 .rank_list .top4_rank {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
-
-
+    flex: 1;
 }
 
-.inner .search_section .searchRow-2 .rank_list .temp_hidden {
-    display: none;
-}
 
 .inner .search_section .searchRow-2 .rank_list a.rank_text {
     display: flex;
@@ -287,13 +277,15 @@ strong {
     align-items: center;
     font-size: 13px;
     gap: 2px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.inner .search_section .searchRow-2 .rank_list a {}
-
-.inner .search_section .searchRow-2 .rank_list a strong {}
-
-.inner .search_section .searchRow-2 .rank_list a p {}
+.inner .search_section .searchRow-2 .rank_list a.rank_text .strong {
+    background-color: black;
+    width: 10px;
+}
 
 .depth-02 {
     display: none;
@@ -731,7 +723,21 @@ strong {
     .list .item .text .detail_icons {
         gap: 3px;
     }
+
     .section-1 .services_list a.services_item {
-     font-size: 14px;
+        font-size: 14px;
+        width: 44.89%;
     }
+
+    .inner .search_section .searchRow-1 .dropdown .search_title {
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    .inner .search_section .searchRow-1 input {
+        font-size: 12px;
+        width: 100%;
+    }
+
+
 }
