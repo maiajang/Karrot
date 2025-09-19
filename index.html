@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karrot_main</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        window.onload = () => {
+
+        }//script;
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="inner">
+                <div class="header_bar">
+                    <div class="headerRow-1">
+                        <h1 class="logo">
+                            <a href="#"><img src="img/Daangn_Signature_RGB.svg" alt="logo"></a>
+                        </h1><!-- .logo end -->
+                        <div class="nav_icons">
+                            <a href="#" class="icons">
+                                <div class="image">
+                                    <img src="img/nav_search.svg" alt="검색">
+                                </div><!-- .image end -->
+                                <p>검색</p>
+                            </a><!-- .icons end -->
+                            <a href="#" class="icons">
+                                <div class="image">
+                                    <img src="img/nav_heart.svg" alt="좋아요">
+                                </div><!-- .image end -->
+                                <p>좋아요</p>
+                            </a><!-- .icons end -->
+                            <a href="#" class="icons">
+                                <div class="image">
+                                    <img src="img/nav_bell_active.svg" alt="알림">
+                                </div><!-- .image end -->
+                                <p>알림</p>
+                            </a><!-- .icons end -->
+                        </div><!-- .nav_icons end -->
+                    </div><!-- .headerRow-1 end -->
+                    <div class="headerRow-2">
+                        <button class="menu_open">
+                            <img src="img/menu_bar.svg" alt="메뉴버튼">
+                        </button><!-- .menu_open end -->
+
+                        <nav class="nav">
+                            <div class="menu_section">
+                                <ul class="gnb">
+                                    <li>
+                                        <div class="category_header">
+                                            <a href="#" class="category_title">중고거래</a>
+                                            <a href="#" class="depth-01"><img src="img/arrow_down.svg" alt="소분류열기"></a>
+                                        </div><!-- .category_header end -->
+                                        <ul class="depth-02">
+                                            <li>수입명품</li>
+                                            <li>패션의류</li>
+                                            <li>패션잡화</li>
+                                            <li>뷰티</li>
+                                            <li>출산/유아동</li>
+                                            <li>모바일/태블릿</li>
+                                            <li>가전제품</li>
+                                            <li>노트북/PC</li>
+                                            <li>카메라/캠코더</li>
+                                            <li>가구/인테리어</li>
+                                            <li>리빙/생활</li>
+                                            <li>게임</li>
+                                            <li>반려동물/취미</li>
+                                            <li>도서/음반/문구</li>
+                                            <li>티켓/쿠폰</li>
+                                            <li>스포츠</li>
+                                            <li>레저/여행</li>
+                                            <li>오토바이</li>
+                                            <li>공구/산업용품</li>
+                                            <li>나눔
+                                                <img src="img/Orange Heart.svg" alt="">
+                                            </li>
+                                        </ul><!-- .depth-02 end -->
+                                    </li>
+                                    <li>
+                                        <div class="category_header">
+                                            <a href="#" class="category_title">부동산</a>
+                                            <a href="#" class="depth-01"><img src="img/arrow_down.svg" alt="소분류열기"></a>
+                                        </div><!-- .category_header end -->
+                                        <ul class="depth-02">
+                                            <li>부동산 검색</li>
+                                            <li>
+                                                <a href="#">중개사 서비스 <img src="img/arrow_diagonal.svg" alt="바로가기"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#">중개사 이용 가이드 <img src="img/arrow_diagonal.svg" alt="바로가기"></a>
+                                            </li>
+                                        </ul><!-- .depth-02 end -->
+                                    </li>
+                                    <li>
+                                        <div class="category_header">
+                                            <a href="#" class="category_title">중고차</a>
+                                            <a href="#" class="depth-01"><img src="img/arrow_down.svg" alt="소분류열기"></a>
+                                        </div><!-- .category_header end -->
+                                        <ul class="depth-02">
+                                            <li>중고차 검색</li>
+                                            <li>
+                                                <a href="#">딜러용 서비스 <img src="img/arrow_diagonal.svg" alt="바로가기"></a>
+                                            </li>
+                                        </ul><!-- .depth-02 end -->
+                                    </li>
+                                    <li>
+                                        <div class="category_header">
+                                            <a href="#" class="category_title">알바</a>
+                                            <a href="#" class="depth-01"><img src="img/arrow_down.svg" alt="소분류열기"></a>
+                                        </div><!-- .category_header end -->
+                                        <ul class="depth-02">
+                                            <li>알바 검색</li>
+                                            <li>당근알바 소개</li>
+                                            <li>
+                                                <a href="#">기업형 서비스 <img src="img/arrow_diagonal.svg" alt="바로가기"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#">신뢰와 안전 <img src="img/arrow_diagonal.svg" alt="바로가기"></a>
+                                            </li>
+                                        </ul><!-- .depth-02 end -->
+                                    </li>
+                                    <li>
+                                        <a href="#">동네업체</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">동네생활</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">모임</a>
+                                    </li>
+                                </ul><!-- .gnb end -->
+                            </div><!-- .menu_section -->
+                        </nav><!-- .nav end -->
+
+                        <button class="location">
+                            <img src="img/pin_point.svg" alt="핀포인트">
+                            <p>동네범위</p>
+                            <img src="img/arrow_down.svg" alt="">
+                        </button><!-- .location end -->
+
+                        <div class="location_pop_up">
+                            <div class="loc_title">
+                                <strong>동네 범위</strong>
+                                <a href="#" class="map">
+                                    <p>지도보기</p>
+                                    <img src="img/arrow_right_orange.svg" alt="바로가기">
+                                </a><!-- .map end -->
+                            </div><!-- .loc_title end -->
+                            <a href="#">연오동과 주위 3km</a>
+                            <div class="select_container">
+                                <div class="select_line"></div>
+
+                                <div class="select_circle">
+                                    <div class="circle"></div>
+                                    <p>내 동네</p>
+                                </div><!-- .select_circle end -->
+                                <div class="select_circle">
+                                    <div class="circle"></div>
+                                </div><!-- .select_circle end -->
+                                <div class="select_circle">
+                                    <div class="circle"></div>
+                                </div><!-- .select_circle end -->
+                                <div class="select_circle">
+                                    <div class="circle"></div>
+                                </div><!-- .select_circle end -->
+                                <div class="select_circle">
+                                    <div class="circle"></div>
+                                    <p>먼 동네</p>
+                                </div><!-- .select_circle end -->
+                            </div><!-- .select_container end -->
+                            <button class="apply">적용</button>
+                        </div><!-- .location_pop_up end -->
+                    </div><!-- .location end -->
+                </div><!-- .header_bar end -->
+                <div class="search_section">
+                    <div class="searchRow-1">
+                        <div class="dropdown">
+                            <button class="search_title">
+                                <p>중고거래</p>
+                                <img src="img/arrow_down_filled.svg" alt="드롭다운">
+                            </button><!-- .search_title end -->
+                            <div class="dropdown_content">
+                                <p>부동산</p>
+                                <p>중고차</p>
+                                <p>알바</p>
+                                <p>동네업체</p>
+                                <p>동네생활</p>
+                                <p>모임</p>
+                            </div><!-- .dropdown_content end -->
+                        </div><!-- .dropdown end -->
+                        <input type="text" value="검색어를 입력해주세요">
+                        <a href="#" class="search_btn">
+                            <img src="img/arrow_right_white.svg" alt="화살표">
+                        </a><!-- .search_btn end -->
+                    </div><!-- .searchRow-1 end -->
+                    <div class="searchRow-2">
+                        <div class="rank_btn">
+                            <button class="prev">
+                                <img src="img/arrow_left_gray.svg" alt="이전">
+                            </button><!-- .prev end -->
+                            <button class="next">
+                                <img src="img/arrow_right_gray.svg" alt="다음">
+                            </button><!-- .next end -->
+                        </div><!-- .rank_btn end -->
+                        <div class="rank_list">
+                            <div class="top4_rank">
+
+                                <a href="#" class="rank_text">
+                                    <strong>1.</strong>
+                                    <p>ps5</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>2.</strong>
+                                    <p>야구티켓</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>3.</strong>
+                                    <p>스피커</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>4.</strong>
+                                    <p>갤럭시</p>
+                                </a><!-- .rank_text end -->
+                            </div><!-- .top4_rank -->
+                            <div class="temp_hidden">
+                                <a href="#" class="rank_text">
+                                    <strong>5.</strong>
+                                    <p>폴드7</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>6.</strong>
+                                    <p>5090</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>7.</strong>
+                                    <p>노트북</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>8.</strong>
+                                    <p>자전거</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>9.</strong>
+                                    <p>만년필</p>
+                                </a><!-- .rank_text end -->
+                                <a href="#" class="rank_text">
+                                    <strong>10.</strong>
+                                    <p>그랜드세이코</p>
+                                </a><!-- .rank_text end -->
+                            </div><!-- .temp_hidden end -->
+                        </div><!-- .rank_list end -->
+                    </div><!-- .searchRow-2 end -->
+                </div><!-- .search_section end -->
+            </div><!-- .inner end -->
+        </header><!-- .header end -->
+        <main class="main">
+            <section class="section-1">
+                <div class="title">
+                    <div class="title_text">
+                        <h3>서비스</h3>
+                    </div><!-- .title_text end -->
+                    <button class="see all">
+                        <p>모두보기</p>
+                        <img src="img/arrow_up_orange.svg" alt="펼치기">
+                    </button><!-- .see all end -->
+                </div><!-- .title end -->
+                <div class="services_list">
+                    <a href="#" class="services_item">
+                        <img src="img/services_sell.svg" alt="중고거래">
+                        <strong>중고거래</strong>
+                    </a><!-- .services_item end -->
+                    <a href="#" class="services_item">
+                        <img src="img/services_part-time-job.svg" alt="알바">
+                        <strong>알바</strong>
+                    </a><!-- .services_item end -->
+                    <a href="#" class="services_item">
+                        <img src="img/services_real-estate.svg" alt="부동산">
+                        <strong>부동산</strong>
+                    </a><!-- .services_item end -->
+                    <a href="#" class="services_item">
+                        <img src="img/services_used-cars.svg" alt="중고차">
+                        <strong>중고차</strong>
+                    </a><!-- .services_item end -->
+                    <a href="#" class="services_item">
+                        <img src="img/services_store.svg" alt="동네업체">
+                        <strong>동네업체</strong>
+                    </a><!-- .services_item end -->
+                    <a href="#" class="services_item">
+                        <img src="img/services_community-life.svg" alt="동네생활">
+                        <strong>동네생활</strong>
+                    </a><!-- .services_item end -->
+                </div><!-- .services_list end -->
+            </section><!-- .section-1 end -->
+            <section class="section-2">
+                <div class="title">
+                    <div class="title_text">
+                        <h3>당신만을 위한 추천</h3>
+                        <p>이 상품 찾고 계셨나요?</p>
+                    </div><!-- .title text -->
+                    <button class="see more">
+                        <p>더보기</p>
+                        <img src="img/arrow_right_orange.svg" alt="더보기">
+                    </button><!-- .see more end -->
+                </div><!-- .title end -->
+                <div class="list">
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_headphone-1.jpg" alt="헤드폰1" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title">스마텍 STBT-H500ANC 블루투스</p>
+                            <p class="item_price">45,000원</p>
+                            <p class="detail">
+                                <span>하은동</span>
+                                <span>|</span>
+                                <span>10분 전</span>
+                            </p><!-- .detail end -->
+                            <p class="self-checking">셀프검수</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_headphone-2.jpg" alt="헤드폰1" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title">삼성 HSH-100V</p>
+                            <p class="item_price">25,000원</p>
+                            <p class="detail">
+                                <span>김여동</span>
+                                <span>|</span>
+                                <span>1일 전</span>
+                            </p><!-- .detail end -->
+                            <p class="self-checking">셀프검수</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_headphone-3.jpg" alt="헤드폰1" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title">로지텍 G733</p>
+                            <p class="item_price">80,000원</p>
+                            <p class="detail">
+                                <span>도저동</span>
+                                <span>|</span>
+                                <span>5초 전</span>
+                            </p><!-- .detail end -->
+                            <p class="self-checking">셀프검수</p>
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                </div><!-- .list end -->
+            </section><!-- .section-2 end -->
+            <section class="section-3">
+                <div class="title">
+                    <div class="title_text">
+                        <h3>당신 근처의 나눔 <img src="img/Orange Heart.svg" alt="하트"></h3>
+                        <p>이웃의 무료 나눔을 받아보세요</p>
+                    </div><!-- .title_text end -->
+                    <button class="see more">
+                        <p>더보기</p>
+                        <img src="img/arrow_right_orange.svg" alt="더보기">
+                    </button><!-- .see more end -->
+                </div><!-- .title end -->
+                <div class="list">
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_uniqlo.jpg" alt="유니클로" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title">유니클로 선글라스</p>
+                            <p class="item_price">나눔<img src="img/Orange Heart.svg" alt="하트"></p>
+                            <p class="detail">
+                                <span>가야동</span>
+                                <span>|</span>
+                                <span>방금</span>
+                            </p><!-- .detail end -->
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_lancome.jpg" alt="랑콤" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title">랑콤 립스틱</p>
+                            <p class="item_price">나눔<img src="img/Orange Heart.svg" alt="하트"></p>
+                            <p class="detail">
+                                <span>도화동</span>
+                                <span>|</span>
+                                <span>1분 전</span>
+                            </p><!-- .detail end -->
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_aesop.jpg" alt="에이솝" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title">에이솝 로제와인 - 동백 백화점 지하 1층</p>
+                            <p class="item_price">나눔<img src="img/Orange Heart.svg" alt="하트"></p>
+                            <p class="detail">
+                                <span>보유동</span>
+                                <span>|</span>
+                                <span>10분 전</span>
+                            </p><!-- .detail end -->
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                </div><!-- .list end -->
+            </section><!-- .section-3 end -->
+            <section class="section-4">
+                <div class="title">
+                    <div class="title_text">
+                        <h3>당신 근처의 인기글</h3>
+                        <p>지금 내 주위에서 일어나고 있는 일은?</p>
+                    </div><!-- .title_text end -->
+                    <button class="see more">
+                        <p>더보기</p>
+                        <img src="img/arrow_right_orange.svg" alt="더보기">
+                    </button><!-- .see more end -->
+                </div><!-- .title end -->
+                <div class="list">
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_food.jpg" alt="만두" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title bold">남용동 맛집 알려 주세요</p>
+                            <p class="detail">
+                                <span>남용동</span>
+                                <span>|</span>
+                                <span>5시간 전</span>
+                            </p><!-- .detail end -->
+                            <div class="detail_icons">
+                                <div class="icons">
+                                    <img src="img/product_card_icon_eye.svg" alt="조회수">
+                                    <p>212</p>
+                                </div><!-- .icons end -->
+                                <div class="icons">
+                                    <img src="img/product_card_icon_reply.svg" alt="댓글">
+                                    <p>42</p>
+                                </div><!-- .icons end -->
+                                <div class="icons">
+                                    <img src="img/product_card_icon_heart.svg" alt="좋아요">
+                                    <p>52</p>
+                                </div><!-- .icons end -->
+                            </div><!-- .detail_icons end -->
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_cat.jpg" alt="고양이" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title bold">고양이 잃어 버리신 분</p>
+                            <p class="detail">
+                                <span>대안동</span>
+                                <span>|</span>
+                                <span>18시간 전</span>
+                            </p><!-- .detail end -->
+                            <div class="detail_icons">
+                                <div class="icons">
+                                    <img src="img/product_card_icon_eye.svg" alt="조회수">
+                                    <p>123</p>
+                                </div><!-- .icons end -->
+                                <div class="icons">
+                                    <img src="img/product_card_icon_reply.svg" alt="댓글">
+                                    <p>38</p>
+                                </div><!-- .icons end -->
+                                <div class="icons">
+                                    <img src="img/product_card_icon_heart.svg" alt="좋아요">
+                                    <p>24</p>
+                                </div><!-- .icons end -->
+                            </div><!-- .detail_icons end -->
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="image">
+                            <img src="img/product_card_img_package.jpg" alt="택배" class="product_img">
+                            <img src="img/product_card_icon_heart.svg" alt="좋아요" class="like">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <p class="item_title bold">택배 주인 찾아요</p>
+                            <p class="detail">
+                                <span>도저동</span>
+                                <span>|</span>
+                                <span>32분 전</span>
+                            </p><!-- .detail end -->
+                            <div class="detail_icons">
+                                <div class="icons">
+                                    <img src="img/product_card_icon_eye.svg" alt="조회수">
+                                    <p>94</p>
+                                </div><!-- .icons end -->
+                                <div class="icons">
+                                    <img src="img/product_card_icon_reply.svg" alt="댓글">
+                                    <p>4</p>
+                                </div><!-- .icons end -->
+                                <div class="icons">
+                                    <img src="img/product_card_icon_heart.svg" alt="좋아요">
+                                    <p>2</p>
+                                </div><!-- .icons end -->
+                            </div><!-- .detail_icons end -->
+                        </div><!-- .text end -->
+                    </div><!-- .item end -->
+                </div><!-- .list end -->
+            </section><!-- .section-4 end -->
+
+        </main><!-- .main end -->
+        <button class="plus_btn"><img src="img/plus.svg" alt="글쓰기"></button>
+
+        <div class="bottom_nav">
+            <div class="bottom_nav_bar">
+                <a href="#" class="icons">
+                    <img src="img/btm_nav_home.svg" alt="홈">
+                    <p>홈</p>
+                </a><!-- .icons end -->
+                <a href="#" class="icons">
+                    <img src="img/btm_nav_community-life.svg" alt="동네생활">
+                    <p>동네생활</p>
+                </a><!-- .icons end -->
+                <a href="#" class="icons">
+                    <img src="img/btm_nav_person.svg" alt="마이">
+                    <p>마이</p>
+                </a><!-- .icons end -->
+                <a href="#" class="icons">
+                    <img src="img/btm_nav_chat.svg" alt="채팅">
+                    <p>채팅</p>
+                </a><!-- .icons end -->
+                <a href="#" class="icons">
+                    <img src="img/btm_nav_back.svg" alt="이전">
+                    <p>이전</p>
+                </a><!-- .icons end -->
+            </div><!-- .bottom_nav_bar end -->
+        </div><!-- .bottom_nav end -->
+        <footer class="footer">
+            <div class="footer_nav">
+                <div class="footer_nav_text">
+                    <div class="footer_nav_row one">
+                        <div class="footer_nav_list">
+                            <strong>회사</strong>
+                            <ul>
+                                <li><a href="#">회사 소개</a></li>
+                                <li><a href="#">당근페이</a></li>
+                                <li><a href="#">팀문화</a></li>
+                                <li><a href="#">서비스 소개</a></li>
+                                <li><a href="#">블로그</a></li>
+                                <li><a href="#">채용</a></li>
+                            </ul>
+                        </div><!-- .footer_nav_list end-->
+                        <div class="footer_nav_list">
+                            <strong>비즈니스</strong>
+                            <ul>
+                                <li><a href="#">당근 비즈니스</a></li>
+                                <li><a href="#">제휴 문의</a></li>
+                                <li><a href="#">광고 문의</a></li>
+                            </ul>
+                        </div><!-- .footer_nav_list end-->
+                    </div><!-- .footer_nav_row one -->
+                    <div class="footer_nav_row two">
+                        <div class="footer_nav_list">
+                            <strong>문의</strong>
+                            <ul>
+                                <li><a href="#">IR</a></li>
+                                <li><a href="#">PR</a></li>
+                                <li><a href="#">고객센터</a></li>
+                            </ul>
+                        </div><!-- .footer_nav_list end-->
+                        <div class="footer_nav_list karrot">
+                            <strong>Karrot</strong>
+                            <ul>
+                                <li><a href="#">Canada<img src="img/arrow_diagonal.svg" alt="외부사이트"></a></li>
+                                <li><a href="#">United States<img src="img/arrow_diagonal.svg" alt="외부사이트"></a></li>
+                                <li><a href="#">United Kingdom<img src="img/arrow_diagonal.svg" alt="외부사이트"></a></li>
+                                <li><a href="#">日本<img src="img/arrow_diagonal.svg" alt="외부사이트"></a></li>
+                            </ul>
+                        </div><!-- .footer_nav_list end-->
+                    </div><!-- .footer_nav_row 2 -->
+                </div><!-- .footer_nav_text end -->
+                <div class="footer_icons">
+                    <h1 class="logo">
+                        <a href="#"><img src="img/Daangn_Signature_RGB.svg" alt="logo"></a>
+                    </h1><!-- .logo end -->
+
+                    <div class="footer_sns">
+                        <a href="#"><img src="img/sns_facebook.svg" alt="페이스북"></a>
+                        <a href="#"><img src="img/sns_instagram.svg" alt="인스타그램"></a>
+                        <a href="#"><img src="img/sns_youtube.svg" alt="유튜브"></a>
+                    </div><!-- .footer_sns end -->
+                </div><!-- .footer_icons end -->
+            </div><!-- .footer_nav end -->
+
+
+            <div class="footer_info">
+                <div class="legal_info">
+                    <strong class="title">(주) 당근마켓 사업자 정보</strong>
+                    <ul>
+                        <li>(주) 당근마켓</li>
+                        <li><b>대표 :</b> 김용현, 황도연</li>
+                        <li><b>사업자번호 :</b> 375-87-00088</li>
+                        <li><b>직업정보제공사업 신고번호 :</b> J1200020200016</li>
+                        <li><b>통신판매업 신고번호 :</b> 2021-서울서초-2875</li>
+                        <li><b>호스팅 사업자 :</b> Amazon Web Service(AWS)</li>
+                        <li><b>주소 :</b> 서울특별시 구로구 디지털로 300, 10층 (당근서비스)</li>
+                        <li><a href="tel:1877-9737"><b>전화 :</b> 1877-9737</a></li>
+                        <li><a href="mailto:cs@daangnservice.com"><b>고객문의 :</b> cs@daangnservice.com</a></li>
+                    </ul>
+                </div><!-- .legal_info end -->
+                <ul class="service_detail">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">운영정책</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">이용자보호 비전과 계획</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                </ul><!-- .service_detail end -->
+            </div><!-- .footer_info end -->
+        </footer><!-- .footer end -->
+    </div><!-- #wrap end -->
+
+</body>
+
+</html>
